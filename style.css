@@ -10,7 +10,7 @@ body{
     font-style: normal;
     cursor: pointer;
     height: auto;
-    display: flex;
+    display: block;
     width: 100%;
     padding: 2%;
     background-color:  #111111;
@@ -37,14 +37,11 @@ h1{
     justify-content: center;
     align-items: center;
     font-size:  3em;
-    color: hsl(314deg 65.53% 50.41%);
+    color: #fff;
 }
 
 .grid-container {
     margin-top: 20px;
-    border-radius: 20px;
-    border-bottom: 1px solid hsl(314deg 95.53% 50.41%);
-    border-top: 1px solid hsl(314deg 95.53% 50.41%);
     display: flex;
     grid-template-columns: repeat(2, 40% 60%); 
     gap: 20px;
@@ -63,20 +60,18 @@ h1{
     color: white;
     align-items: center;
     font-size: 5em;
-    border-radius: 30px;
-    border-right: 1px solid hsl(314deg 95.53% 50.41%);
   }
 .content{
     display: flex;
     padding-left: 2em;
     justify-content: center;
     flex-direction: column;
+    margin-left: 3.4em;
 }
 .content h3{
     padding-bottom: 1em;
     justify-content: center;
     align-items: center;
-    margin-left: 3rem;
     font-size: 2em;
     color: white;
 }
@@ -86,4 +81,63 @@ h1{
 i{
    color: white;
 }
-  
+
+
+.container2{
+    margin-left: 5%;
+    height: fit-content;
+    width: 90%;
+    padding: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.list{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(314deg 95.53% 50.41%);
+    transform: translate(-50% -50%);
+    margin-left: 12%;
+    border-radius: 20px;
+}
+ul li{
+    justify-content: center;
+    align-items: center;
+    padding: 5px 4px;
+    width: 100%;
+    display: inline-block;
+   transform: translate(-50% -50%);
+   border-left: 1px solid hsl(314deg 95.53% 50.41%);
+   
+}
+ul li:nth-child(1){
+    border-left: none;
+    padding-left: 5px
+}
+ul li:nth-child(1),
+ul li:nth-child(2),
+ul li:nth-child(3),
+ul li:nth-child(4) {
+   width: 11em;
+   height: 3em;
+
+}
+
+ul li a{
+    width: 12em;
+    margin-bottom: 10px;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    margin-top: -5px;
+    margin-left: -15px;
+}
+
+.list ul li a:hover{
+    background-color: hsl(314deg 95.53% 50.41%);
+    border-radius: 20px;
+}
