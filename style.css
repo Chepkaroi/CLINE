@@ -22,6 +22,14 @@ body{
     .grid-container {
       flex-direction: column;
     }
+    .content{
+        padding-left: 0em;
+        justify-content: center;
+    }
+    .container{
+        margin-left: -4%;
+        padding-left: 0px;
+    }
    
 }
 .container{
@@ -107,9 +115,7 @@ th, td {
     width: 25%; 
     border-radius: 10px;
 }
-th, td :active{
-    
-}
+
 tr{
     height: 3em;
     border: 0.5px solid rgb(252, 244, 244);
@@ -126,7 +132,6 @@ th:active {
     padding: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 20px;
-    background-color: #0c0b0b;
     opacity: 0; 
     overflow: hidden; 
     transition: max-height 0.5s, opacity 0.5s; 
@@ -135,6 +140,7 @@ th:active {
 .container3.active {
     max-height: 90vh; 
     opacity: 1; 
+}
 
 .section {
     margin-bottom: 20px;
@@ -149,4 +155,61 @@ h4 {
 p {
     color: #fff;
     line-height: 1.6;
+}
+
+.container4 {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+    max-height: 100vh; 
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 20px;
+    font-size: 22px;
+    margin-bottom: 5%;
+}
+.form-group {
+    margin-bottom: 20px;
+    background-color: #111111;
+}
+label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+input, textarea {
+    font-family: Work Sans, sans-serif !important;
+    width: 100%;
+    color: #fff;
+    min-height: 3em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 25px;
+    background-color: #111111;
+    padding-left: 2em;
+}
+textarea{
+    max-width: 100% !important;
+    min-height: 5em;
+    padding-top: 2em;
+}
+button {
+    display: flex;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 12em;
+    height: 3em;
+    align-items: center;
+    font-size: 30px;
+}
+button:hover {
+    background-color: #45a049;
 }
