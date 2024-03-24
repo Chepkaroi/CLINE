@@ -36,15 +36,124 @@
         </div>
     </div>
     <div class="container2">
-        <div class="list">
-            <ul>
-                <li><a href="" class="a">Terms And Conditions</a></li>
-                <li><a href="" class="a">Privacy Policy</a></li>
-                <li><a href="" class="a">Cookies Policy</a></li>
-                <li><a href="" class="a">Disclaimers</a></li>
-            </ul>
+        <table>
+            <tr>
+                <th onclick="showPage0()">Terms And Conditions</th>
+                <th onclick="showPage1()">Privacy Policy</th>
+                <th onclick="showPage2()">Cookies Policy</th>
+                <th onclick="showPage3()">Disclaimers</th>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="container3">
+        <div id="page0">
+            <h2>Terms And Conditions</h2>
+            <div class="section">
+                <h4>Agreement to Terms</h4>
+                <p>By accessing this website, you agree to be bound by these terms and conditions, all applicable laws, and regulations, and agree that you are responsible for compliance with any applicable local laws.</p>
+            </div>
+            <div class="section">
+                <h4>Intellectual Property Rights</h4>
+                <p>The content on this website, including but not limited to text, graphics, logos, images, audio clips, video clips, data compilations, and software, is the property of Cline or its content suppliers and is protected by copyright laws.</p>
+            </div>
+            <div class="section">
+                <h4>Limitation of Liability</h4>
+                <p>In no event shall Cline be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the website.</p>
+            </div>
+            <div class="section">
+                <h4>Governing Law</h4>
+                <p>These terms and conditions are governed by and construed in accordance with the laws of Cline and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+            </div>
+        </div>
+    
+        <div id="page1" style="display: none;">
+            <h2>Privacy Policy</h2>
+            <div class="section">
+                <h4> Information Collection and Use</h4>
+                <p>We may collect personal information that you provide when you use our website. This information may include your name, email address, and other contact information.</p>
+            </div>
+            <div class="section">
+                <h4>Use of Information</h4>
+                <p>We may use the information we collect for various purposes, including to provide and maintain our website, to notify you about changes to our website, and to improve our services.</p>
+            </div>
+            <div class="section">
+                <h4>Cookies</h4>
+                <p>Our website may use cookies to enhance your experience. You have the option to disable cookies through your browser settings, but this may affect the functionality of the website.</p>
+            </div>
+        </div>
+    
+        <div id="page2" style="display: none;">
+            <h2>Cookies Policy</h2>
+            <div class="section">
+                <h4> What Are Cookies</h4>
+                <p>Cookies are small pieces of data stored on your device by your web browser. They are used to improve your browsing experience by remembering your preferences and settings.</p>
+            </div>
+            <div class="section">
+                <h4> How We Use Cookies</h4>
+                <p>We use cookies for various purposes, including to analyze traffic, personalize content, and serve targeted advertisements.</p>
+            </div>
+            <div class="section">
+                <h4>Your Choices Regarding Cookies</h4>
+                <p>You have the option to disable cookies through your browser settings. However, please note that disabling cookies may affect the functionality of the website.</p>
+            </div>
+        </div>
+    
+        <div id="page3" style="display: none;">
+            <h2>Disclaimers</h2>
+            <div class="section">
+                <h4>Content Disclaimer</h4>
+                <p>The information provided on this website is for general informational purposes only. We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information contained on the website.</p>
+            </div>
+            <div class="section">
+                <h4>External Links Disclaimer</h4>
+                <p>This website may contain links to external websites that are not provided or maintained by us. We do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.</p>
+            </div>
+            <div class="section">
+                <h4> Liability Disclaimer</h4>
+                <p>In no event shall we be liable for any loss or damage, including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
+            </div>
         </div>
     </div>
+    
+    <script>
+        const page0=document.getElementById("page0");
+        const page1=document.getElementById("page1");
+        const page2=document.getElementById("page2");
+        const page3=document.getElementById("page3");
+        const container = document.querySelector('.container3');
+
+        container.classList.toggle('active');
+
+        function showPage3(){
+            page3.style.display="block";
+            page1.style.display="none";
+            page2.style.display="none";
+            page0.style.display="none";
+        }
+
+        function showPage2(){
+            page2.style.display="block";
+            page1.style.display="none";
+            page3.style.display="none";
+            page0.style.display="none";
+        }
+
+        function showPage1(){
+            page1.style.display="block";
+            page3.style.display="none";
+            page2.style.display="none";
+            page0.style.display="none";
+        }
+
+        function showPage0(){
+            page0.style.display="block";
+            page1.style.display="none";
+            page2.style.display="none";
+            page3.style.display="none";
+        }
+    </script>
+    
     
 </body>
 </html>

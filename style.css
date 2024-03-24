@@ -91,53 +91,62 @@ i{
     position: relative;
     overflow: hidden;
 }
-.list{
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid hsl(314deg 95.53% 50.41%);
-    transform: translate(-50% -50%);
-    margin-left: 12%;
-    border-radius: 20px;
-}
-ul li{
-    justify-content: center;
-    align-items: center;
-    padding: 5px 4px;
+
+table {
     width: 100%;
-    display: inline-block;
-   transform: translate(-50% -50%);
-   border-left: 1px solid hsl(314deg 95.53% 50.41%);
+    border-collapse: collapse;
    
 }
-ul li:nth-child(1){
-    border-left: none;
-    padding-left: 5px
-}
-ul li:nth-child(1),
-ul li:nth-child(2),
-ul li:nth-child(3),
-ul li:nth-child(4) {
-   width: 11em;
-   height: 3em;
 
-}
-
-ul li a{
-    width: 12em;
-    margin-bottom: 10px;
-    height: 3em;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+th, td {
+    border: 0.5px solid rgb(252, 244, 244);
+    padding: 8px;
+    height: 2%;
     color: #fff;
-    text-decoration: none;
-    margin-top: -5px;
-    margin-left: -15px;
+    text-align: center;
+    width: 25%; 
+    border-radius: 10px;
+}
+th, td :active{
+    
+}
+tr{
+    height: 3em;
+    border: 0.5px solid rgb(252, 244, 244);
+}
+th:active {
+    background-color: white;
+    color: black;
+    transition: background-color 0.2s; 
+}
+.container3 {
+    max-width: 85%;
+    max-height: 0; 
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 20px;
+    background-color: #0c0b0b;
+    opacity: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s, opacity 0.5s; 
 }
 
-.list ul li a:hover{
-    background-color: hsl(314deg 95.53% 50.41%);
-    border-radius: 20px;
+.container3.active {
+    max-height: 90vh; 
+    opacity: 1; 
+
+.section {
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #fcfafa;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+}
+
+p {
+    color: #fff;
+    line-height: 1.6;
 }
